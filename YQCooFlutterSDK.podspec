@@ -24,14 +24,14 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/openman1992/YQCooFlutterSDK'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'openman1992' => '23741423@qq.com' }
+  s.author           = { 'openman1992' => '237414238@qq.com' }
   s.source           = { :git => 'https://github.com/openman1992/YQCooFlutterSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'YQCooFlutterSDK/Classes/**/*'
-  
+  # s.source_files = 'YQCooFlutterSDK/Classes/**/*'
+  s.vendored_frameworks = 'YQCooFlutterSDK/**/*.framework'
   # s.resource_bundles = {
   #   'YQCooFlutterSDK' => ['YQCooFlutterSDK/Assets/*.png']
   # }
