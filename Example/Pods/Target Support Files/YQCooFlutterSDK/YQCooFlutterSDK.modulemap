@@ -1,0 +1,6 @@
+framework module YQCooFlutterSDK {
+  umbrella header "YQCooFlutterSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - YQCooFlutterSDK (0.1.0)
+
+DEPENDENCIES:
+  - YQCooFlutterSDK (from `../`)
+
+EXTERNAL SOURCES:
+  YQCooFlutterSDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YQCooFlutterSDK: 3a302bf938e7f3b4ebf3a0f114644e006ead88ca
+
+PODFILE CHECKSUM: dd799a47311ecd29ab96767b7531620ddf7b6c50
+
+COCOAPODS: 1.5.3

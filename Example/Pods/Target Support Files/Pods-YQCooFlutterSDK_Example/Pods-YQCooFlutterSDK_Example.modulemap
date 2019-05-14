@@ -1,0 +1,6 @@
+framework module Pods_YQCooFlutterSDK_Example {
+  umbrella header "Pods-YQCooFlutterSDK_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
