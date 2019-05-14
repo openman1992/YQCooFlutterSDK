@@ -38,9 +38,9 @@
 
 /* Begin PBXFileReference section */
 		1F6BA678D0DD560BE3E0086D /* Pods_YQCooFlutterSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YQCooFlutterSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		46A1FF87D6D2D06610DBBEB8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		46A1FF87D6D2D06610DBBEB8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		491C99429B0692A5AA890FF3 /* Pods-YQCooFlutterSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YQCooFlutterSDK_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-YQCooFlutterSDK_Example/Pods-YQCooFlutterSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		4B763317BEB852BD663229AA /* YQCooFlutterSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YQCooFlutterSDK.podspec; path = ../YQCooFlutterSDK.podspec; sourceTree = "<group>"; };
+		4B763317BEB852BD663229AA /* YQCooFlutterSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YQCooFlutterSDK.podspec; path = ../YQCooFlutterSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* YQCooFlutterSDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YQCooFlutterSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,7 +63,7 @@
 		6A961D404B9DF03E51C2DED5 /* Pods_YQCooFlutterSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YQCooFlutterSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DB2E95BBC7B2A48B5966813 /* Pods-YQCooFlutterSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YQCooFlutterSDK_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YQCooFlutterSDK_Example/Pods-YQCooFlutterSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7AD01324891BC9080A3B97B2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7AD01324891BC9080A3B97B2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		900A750A9DB2FE32CCC85C50 /* Pods-YQCooFlutterSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YQCooFlutterSDK_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YQCooFlutterSDK_Tests/Pods-YQCooFlutterSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D12852706A5569809C9FB6ED /* Pods-YQCooFlutterSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YQCooFlutterSDK_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YQCooFlutterSDK_Tests/Pods-YQCooFlutterSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -301,11 +301,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-YQCooFlutterSDK_Example/Pods-YQCooFlutterSDK_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/YQCooFlutterSDK/YQCooFlutterSDK.framework",
+				"${PODS_ROOT}/../../YQCooFlutterSDK/Fluttersdk/App.framework",
+				"${PODS_ROOT}/../../YQCooFlutterSDK/Fluttersdk/engine/Flutter.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YQCooFlutterSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/App.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flutter.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

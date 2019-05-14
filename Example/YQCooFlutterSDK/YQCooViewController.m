@@ -7,6 +7,7 @@
 //
 
 #import "YQCooViewController.h"
+#import <Flutter/Flutter.h>
 
 @interface YQCooViewController ()
 
@@ -18,6 +19,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    FlutterViewController *vie = [[FlutterViewController alloc]init];
+    [self presentViewController:vie animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning

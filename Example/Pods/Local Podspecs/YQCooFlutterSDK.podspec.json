@@ -9,7 +9,7 @@
     "file": "LICENSE"
   },
   "authors": {
-    "openman1992": "23741423@qq.com"
+    "openman1992": "237414238@qq.com"
   },
   "source": {
     "git": "https://github.com/openman1992/YQCooFlutterSDK.git",
@@ -18,5 +18,5 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "YQCooFlutterSDK/Classes/**/*"
+  "vendored_frameworks": "YQCooFlutterSDK/**/*.framework"
 }

@@ -143,10 +143,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/YQCooFlutterSDK/YQCooFlutterSDK.framework"
+  install_framework "${PODS_ROOT}/../../YQCooFlutterSDK/Fluttersdk/App.framework"
+  install_framework "${PODS_ROOT}/../../YQCooFlutterSDK/Fluttersdk/engine/Flutter.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/YQCooFlutterSDK/YQCooFlutterSDK.framework"
+  install_framework "${PODS_ROOT}/../../YQCooFlutterSDK/Fluttersdk/App.framework"
+  install_framework "${PODS_ROOT}/../../YQCooFlutterSDK/Fluttersdk/engine/Flutter.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
